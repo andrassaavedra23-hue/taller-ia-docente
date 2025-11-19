@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller IA Docente | Telecom Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0f172a',
+                        brandCyan: '#06b6d4',
+                        brandPink: '#ec4899',
+                        brandPurple: '#8b5cf6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #0f172a; color: white; }
+        .gradient-text {
+            background: linear-gradient(to right, #06b6d4, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+        <div class="flex items-center gap-3">
+            <img src="logo.jpg" alt="Telecom Solutions Logo" class="h-12 w-auto rounded-lg shadow-lg shadow-brandCyan/20">
+            <span class="font-bold text-xl tracking-tight hidden sm:block">Telecom Solutions</span>
+        </div>
+        <a href="#contacto" class="bg-white text-brandDark font-bold py-2 px-6 rounded-full hover:bg-brandCyan hover:text-white transition duration-300">
+            Reservar Cupo
+        </a>
+    </nav>
+
+    <header class="relative overflow-hidden pt-16 pb-24 px-6">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full glass-card text-sm font-semibold text-brandCyan">
+                🚀 Taller Presencial - Nivel: Desde Cero
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                El <span class="gradient-text">Copiloto</span> del Docente
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                La Inteligencia Artificial no viene a reemplazarte. Viene a liberarte de la carga mental para que vuelvas a hacer lo que amas: <span class="text-white font-bold">Enseñar</span>.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#temario" class="bg-gradient-to-r from-brandCyan to-brandPurple text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-brandCyan/30 hover:scale-105 transition transform">
+                    Ver lo que aprenderás
+                </a>
+                <a href="#dolores" class="glass-card text-white font-semibold py-4 px-8 rounded-xl hover:bg-white/10 transition">
+                    ¿Es para mí?
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full z-0 opacity-30 pointer-events-none">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-brandPurple rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+            <div class="absolute top-20 right-10 w-72 h-72 bg-brandCyan rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+            <div class="absolute -bottom-8 left-20 w-72 h-72 bg-brandPink rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+        </div>
+    </header>
+
+    <section id="dolores" class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">¿Te sientes identificado con esto?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-brandPink hover:-translate-y-2 transition duration-300">
+                    <div class="text-4xl mb-4">📩</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Correos "Con Pinzas"</h3>
+                    <p class="text-gray-400">Pasas 30 minutos redactando un correo delicado a un padre de familia para no generar conflictos.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-brandCyan hover:-translate-y-2 transition duration-300">
+                    <div class="text-4xl mb-4">📑</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Burocracia Infinita</h3>
+                    <p class="text-gray-400">Llenar anecdotarios, informes y actas repetitivas que consumen tu tiempo personal.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-brandPurple hover:-translate-y-2 transition duration-300">
+                    <div class="text-4xl mb-4">🤯</div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Bloqueo Creativo</h3>
+                    <p class="text-gray-400">Necesitas crear una clase original desde cero y te quedas mirando la pantalla en blanco.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="temario" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Lo que dominarás en 2 horas</h2>
+            <p class="text-brandCyan">Metodología 100% Práctica: "Aprender Haciendo"</p>
+        </div>
+
+        <div class="space-y-6">
+            <div class="flex flex-col md:flex-row gap-6 items-start bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                <div class="bg-brandCyan/10 text-brandCyan font-bold px-4 py-2 rounded-lg text-sm whitespace-nowrap">FASE 1</div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Herramientas y Mentalidad</h3>
+                    <p class="text-gray-400 mb-3">Aprende a usar la "Delegación Inteligente". Configuraremos tu espacio de trabajo y aprenderemos el truco de la "Lupa" (Snipping Tool) para solucionar problemas visuales.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-6 items-start bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                <div class="bg-brandPink/10 text-brandPink font-bold px-4 py-2 rounded-lg text-sm whitespace-nowrap">FASE 2</div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">La Fórmula Maestra (R-T-C-P)</h3>
+                    <p class="text-gray-400 mb-3">Dejarás de "chatear" con la IA y empezarás a darle órdenes profesionales. Aprenderás la estructura exacta de un Prompt perfecto: Rol, Tarea, Contexto y Propósito.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-6 items-start bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                <div class="bg-brandPurple/10 text-brandPurple font-bold px-4 py-2 rounded-lg text-sm whitespace-nowrap">FASE 3</div>
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-2">Personalización Extrema</h3>
+                    <p class="text-gray-400 mb-3">El verdadero poder: Cómo adaptar una lección completa para un alumno con dificultades específicas (Ej. Explicar historia con Minecraft) en segundos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="bg-gradient-to-b from-slate-900 to-black py-20 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">¿Listo para recuperar tu tiempo?</h2>
+            <div class="bg-slate-800 p-8 rounded-3xl shadow-2xl border border-slate-700 inline-block w-full max-w-lg">
+                <p class="text-gray-400 mb-6">Agenda tu cupo o solicita información para tu colegio.</p>
+                
+                <div class="space-y-4">
+                    <a href="https://wa.me/51938109096" target="_blank" class="block w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-xl transition flex items-center justify-center gap-3">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-8.683-2.031-9.672-.272-.989-.471-1.138-.471-1.138-.321-.099-.52-.148-.719-.148-.198 0-.42.05-.62.174-.199.124-.867.817-.867 1.981 0 1.165.842 2.277.966 2.45 1.225 1.71 2.856 2.649 4.007 3.591 3.07 1.212 2.056.977 2.056 1.276 0 .299-.124 1.498-1.758 1.995-1.995-.248-.497-.867-.743-1.238-.917z"/></svg>
+                        Escribir al WhatsApp (938109096)
+                    </a>
+                    
+                    <a href="mailto:andrassaavedra23@gmail.com" class="block w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-4 px-6 rounded-xl transition flex items-center justify-center gap-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        Enviar Correo
+                    </a>
+                </div>
+                <p class="mt-4 text-xs text-slate-500">andressaavedra23@gmail.com</p>
+            </div>
+            
+            <div class="mt-12 border-t border-slate-800 pt-8">
+                <p class="text-slate-600 text-sm">© 2024 Telecom Solutions Consulting Services. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
